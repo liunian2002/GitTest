@@ -56,6 +56,8 @@ public class ForeUserController extends BaseController {
             return "redirect:/login";
         }
     }
+    
+    //2222
   
     //前台Mall-用户更换头像
     @ResponseBody
