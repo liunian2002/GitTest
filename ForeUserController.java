@@ -23,6 +23,8 @@ public class ForeUserController extends BaseController {
     private UserService userService;
     @Resource
     private AddressService addressService;
+    
+    //11111
 
     //转到前台Mall-用户详细页
     @RequestMapping(value = "userDetails", method = RequestMethod.GET)
@@ -54,6 +56,8 @@ public class ForeUserController extends BaseController {
             return "redirect:/login";
         }
     }
+  
+    //2222
 
     //前台Mall-用户更换头像
     @ResponseBody
@@ -79,6 +83,8 @@ public class ForeUserController extends BaseController {
         }
         return jsonObject.toJSONString();
     }
+    
+    //3333
 
     //前台Mall-用户详情更新
     @RequestMapping(value = "user/update", method = RequestMethod.POST, produces = "application/json;charset=utf-8")
