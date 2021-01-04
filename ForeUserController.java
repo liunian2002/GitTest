@@ -24,8 +24,6 @@ public class ForeUserController extends BaseController {
     @Resource
     private AddressService addressService;
     
-    //11111
-
     //转到前台Mall-用户详细页
     @RequestMapping(value = "userDetails", method = RequestMethod.GET)
     public String goToUserDetail(HttpSession session, Map<String, Object> map) {
@@ -57,8 +55,6 @@ public class ForeUserController extends BaseController {
         }
     }
   
-    //2222
-
     //前台Mall-用户更换头像
     @ResponseBody
     @RequestMapping(value = "user/uploadUserHeadImage", method = RequestMethod.POST, produces = "application/json;charset = utf-8")
@@ -84,8 +80,6 @@ public class ForeUserController extends BaseController {
         return jsonObject.toJSONString();
     }
     
-    //3333
-
     //前台Mall-用户详情更新
     @RequestMapping(value = "user/update", method = RequestMethod.POST, produces = "application/json;charset=utf-8")
     public String userUpdate(HttpSession session, Map<String, Object> map,
