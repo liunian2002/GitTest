@@ -84,6 +84,8 @@ public class ForeUserController extends BaseController {
         return jsonObject.toJSONString();
     }
     
+    //3333    
+
     //前台Mall-用户详情更新
     @RequestMapping(value = "user/update", method = RequestMethod.POST, produces = "application/json;charset=utf-8")
     public String userUpdate(HttpSession session, Map<String, Object> map,
